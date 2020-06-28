@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BF-Tag Alarmtool", "BF-Tag Alarmtool\BF-Tag Alarmtool.csproj", "{BB783142-A177-4905-B230-6470DEAC8262}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB783142-A177-4905-B230-6470DEAC8262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB783142-A177-4905-B230-6470DEAC8262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB783142-A177-4905-B230-6470DEAC8262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB783142-A177-4905-B230-6470DEAC8262}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDD6C80A-8F5C-4726-BF20-928D242AC61F}
+	EndGlobalSection
+EndGlobal

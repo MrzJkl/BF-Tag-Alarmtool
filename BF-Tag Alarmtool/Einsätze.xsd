@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Einsätze" targetNamespace="http://tempuri.org/Einsätze.xsd" xmlns:mstns="http://tempuri.org/Einsätze.xsd" xmlns="http://tempuri.org/Einsätze.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Einsätze" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Einsätze" msprop:Generator_UserDSName="Einsätze">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblEinsätze" msprop:Generator_TableClassName="tblEinsätzeDataTable" msprop:Generator_TableVarName="tabletblEinsätze" msprop:Generator_TablePropName="tblEinsätze" msprop:Generator_RowDeletingName="tblEinsätzeRowDeleting" msprop:Generator_RowChangingName="tblEinsätzeRowChanging" msprop:Generator_RowEvHandlerName="tblEinsätzeRowChangeEventHandler" msprop:Generator_RowDeletedName="tblEinsätzeRowDeleted" msprop:Generator_UserTableName="tblEinsätze" msprop:Generator_RowChangedName="tblEinsätzeRowChanged" msprop:Generator_RowEvArgName="tblEinsätzeRowChangeEvent" msprop:Generator_RowClassName="tblEinsätzeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EinsatzId" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnEinsatzId" msprop:Generator_ColumnPropNameInRow="EinsatzId" msprop:Generator_ColumnPropNameInTable="EinsatzIdColumn" msprop:Generator_UserColumnName="EinsatzId" type="xs:long" />
+              <xs:element name="ApiKey" msprop:Generator_ColumnVarNameInTable="columnApiKey" msprop:Generator_ColumnPropNameInRow="ApiKey" msprop:Generator_ColumnPropNameInTable="ApiKeyColumn" msprop:Generator_UserColumnName="ApiKey" type="xs:string" />
+              <xs:element name="Einsatzbeginn" msprop:Generator_ColumnVarNameInTable="columnEinsatzbeginn" msprop:Generator_ColumnPropNameInRow="Einsatzbeginn" msprop:Generator_ColumnPropNameInTable="EinsatzbeginnColumn" msprop:Generator_UserColumnName="Einsatzbeginn" type="xs:dateTime" />
+              <xs:element name="Einsatznummer" msprop:Generator_ColumnVarNameInTable="columnEinsatznummer" msprop:Generator_ColumnPropNameInRow="Einsatznummer" msprop:Generator_ColumnPropNameInTable="EinsatznummerColumn" msprop:Generator_UserColumnName="Einsatznummer" type="xs:string" minOccurs="0" />
+              <xs:element name="Einsatzstichwort" msprop:Generator_ColumnVarNameInTable="columnEinsatzstichwort" msprop:Generator_ColumnPropNameInRow="Einsatzstichwort" msprop:Generator_ColumnPropNameInTable="EinsatzstichwortColumn" msprop:Generator_UserColumnName="Einsatzstichwort" type="xs:string" />
+              <xs:element name="Adresse" msprop:Generator_ColumnVarNameInTable="columnAdresse" msprop:Generator_ColumnPropNameInRow="Adresse" msprop:Generator_ColumnPropNameInTable="AdresseColumn" msprop:Generator_UserColumnName="Adresse" type="xs:string" />
+              <xs:element name="Sachverhalt" msprop:Generator_ColumnVarNameInTable="columnSachverhalt" msprop:Generator_ColumnPropNameInRow="Sachverhalt" msprop:Generator_ColumnPropNameInTable="SachverhaltColumn" msprop:Generator_UserColumnName="Sachverhalt" type="xs:string" minOccurs="0" />
+              <xs:element name="isAlarmiert" msprop:Generator_ColumnVarNameInTable="columnisAlarmiert" msprop:Generator_ColumnPropNameInRow="isAlarmiert" msprop:Generator_ColumnPropNameInTable="isAlarmiertColumn" msprop:Generator_UserColumnName="isAlarmiert" type="xs:boolean" />
+              <xs:element name="Alarmdurchsage" msprop:Generator_ColumnVarNameInTable="columnAlarmdurchsage" msprop:Generator_ColumnPropNameInRow="Alarmdurchsage" msprop:Generator_ColumnPropNameInTable="AlarmdurchsageColumn" msprop:Generator_UserColumnName="Alarmdurchsage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblEinsätze" />
+      <xs:field xpath="mstns:EinsatzId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
