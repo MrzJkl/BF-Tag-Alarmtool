@@ -53,9 +53,9 @@ namespace BF_Tag_Alarmtool
             int.TryParse(tbEinsatznummer.Text, out int einsatznummer);
             string alarmdurchsage = tbAlarmdurchsage.Text;
 
-            if (apiKey == "" || einsatzstichwort == "" || adresse == "" || apiKey.Length != 560 || einsatzbeginn < System.DateTime.Now)
+            if (apiKey == "" || einsatzstichwort == "" || adresse == "" || apiKey == "" || einsatzbeginn < System.DateTime.Now)
             {
-                MessageBox.Show("Ungültige Eingabe. Die Felder ApiKey, Einsatzstichwort, Adresse und Einsatzbeginn sind erforderlich. Der ApiKey muss exakt 560 Zeichen lang sein. Der Einsatzbeginn muss in der Zukunft liegen", "Fehler");
+                MessageBox.Show("Ungültige Eingabe. Die Felder ApiKey, Einsatzstichwort, Adresse und Einsatzbeginn sind erforderlich.  Der Einsatzbeginn muss in der Zukunft liegen", "Fehler");
                 return;
             }
 
@@ -75,7 +75,7 @@ namespace BF_Tag_Alarmtool
         private bool alarm(Einsatz einsatz)
         {
             string einsatzUploadPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\EinsatzUpload\\EinsatzUpload.exe";
-            string parameters = "-K " + einsatz.ApiKey + " -S \"" + einsatz.Einsatzstichwort + "\" -A \"" + einsatz.Adresse + "\" -F \"" + einsatz.Sachverhalt + "\" -E " + einsatz.Einsatznummer;
+            string parameters = "-K " + einsatz.ApiKey + " -S \"" + einsatz.Einsatzstichwort + "\" -A \"" + einsatz.Adresse + "\" -F \"" + einsatz.Sachverhalt + "\" -E \"" + einsatz.Einsatznummer + "\" -R \"" + "BF-TAG ALARMTOOL JUGENDFEUERWEHR\"";
             Console.WriteLine(parameters);
             try
             {
@@ -188,7 +188,7 @@ namespace BF_Tag_Alarmtool
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Version 2019.10.11 - Entwickelt von: M. Jökel");
+            MessageBox.Show("Version 2023.04.30 - Entwickelt von: M. Jökel");
         }
     }
 }
